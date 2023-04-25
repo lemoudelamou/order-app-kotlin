@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/produkt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order.ShopItemsActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/pet_blue"
+        android:gravity="bottom|center_horizontal"
+        android:paddingTop="35dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/name_sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:textStyle="bold"
+            android:text="@string/shop_name"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints,RtlCompat" />
+
+        <TextView
+            android:id="@+id/address_sh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:textStyle="bold"
+            android:text="@string/shop_address"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name_sh"
+            app:layout_constraintVertical_bias="0.081" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imageLayout">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="474dp"
+            android:background="@color/grey"
+            android:layout_above="@+id/buttonCheckout"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="25dp"
+            android:paddingBottom="30dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/buttonCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="29dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/zur_kasse"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

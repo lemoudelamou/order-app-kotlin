@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Solubox</string>
+
+    <string name="err_name">Bitte Das Name Feld ausfüllen</string>
+    <string name="err_lastname">Bitte Das Nachname Feld ausfüllen</string>
+    <string name="err_phone">Bitte Das Telefonnummer Feld ausfüllen</string>
+    <string name="err_email">E-Mail Adresse nicht erkannt</string>
+    <string name="err_password">Das Passwort muss mindestens 6 Zeichen lang sein</string>
+    <string name="err_address">Bitte Das Adresse Feld ausfüllen</string>
+    <string name="err_postcode">Bitte Das Postleitzahl Feld ausfüllen</string>
+    <string name="err_city">Bitte Das Stadt Feld ausfüllen</string>
+
+
+    <string name="facebook_app_id">YOUR_APP_ID</string>
+    <string name="fb_login_protocol_scheme">YOUR_THING</string>
+
+
+    <string name="logout">Logout</string>
+    <string name="logout_message">Wollen Sie sich wirklich abmelden?</string>
+
+    <string name="yes">Ja</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="password">Passwort</string>
+    <string name="login">Login</string>
+    <string name="register">register</string>
+    <string name="msg_no_network_connection">Bitte überprüfe deine Internetverbindung</string>
+    <string name="checkbox">Remember Me</string>
+    <string name="remember_me">Anmeldedaten speichern</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="welcome_in_your_new_delivery_app">Willkommen in deiner neuen Liefer-App</string>
+    <string name="fullname">Fullname:</string>
+    <string name="phone">phonenumber</string>
+    <string name="nachname">Nachname</string>
+    <string name="mobilnummer">Mobilnummer</string>
+    <string name="adresse">Adresse</string>
+    <string name="postleitzahl">Postleitzahl</string>
+    <string name="Einstellung">Einstellung</string>
+
+
+    <string name="hallo">Hallo ! </string>
+    <string name="welcome_messages">Hallo! %1$s %2$s</string>
+    <string name="gutschein_einloesen">Gutschein einlösen</string>
+    <string name="speichern">Speichern</string>
+    <string name="zur_kasse">Zur Kasse</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="fertig">Fertig</string>
+    <string name="bestellung_erfolgreich_aufgegeben">Bestellung erfolgreich aufgegeben.</string>
+    <string name="in_den_warenkorb_legen">In den Warenkorb legen</string>
+    <string name="shop_address">Shop Address</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="show_dialog">Show dialog</string>
+    <string name="show_custom_dialog">Show custom dialog</string>
+    <string name="ok">OK</string>
+    <string name="favourite">Favourite</string>
+    <string name="profil">Profil</string>
+    <string name="search">Search</string>
+    <string name="w_hlen">Wählen</string>
+    <string name="_1">1</string>
+    <string name="customer_details">Zahlungsmethode</string>
+    <string name="bargeld">Bargeld</string>
+    <string name="karte">Karte</string>
+    <string name="bitte_name_eingeben">Bitte Name eingeben</string>
+    <string name="bitte_adresse_eingeben">Bitte Adresse eingeben</string>
+    <string name="bitte_stadt_eingeben">Bitte Stadt eingeben</string>
+    <string name="enter_your_state">Enter your state</string>
+    <string name="bitte_postleitzahl_eingeben">Bitte Postleitzahl eingeben</string>
+    <string name="karte_details">Karte Details</string>
+    <string name="bitte_kartennummer_eingeben">Bitte Kartennummer eingeben</string>
+    <string name="bitte_karten_ablaufdatum_eingeben_mm_yyyy">Bitte Karten ablaufdatum eingeben(mm/yyyy)</string>
+    <string name="bitte_karten_geheimzahl_eingeben_3_digits">Bitte Karten geheimzahl eingeben(3 digits)</string>
+    <string name="gesamte_artikel_im_warenkorb">Gesamte Artikel im Warenkorb</string>
+    <string name="zwischensumme">Zwischensumme</string>
+    <string name="_0_0">€0.0</string>
+    <string name="solubox_servicegeb_hr">Solubox Servicegebühr</string>
+    <string name="total">Total</string>
+    <string name="bestellung_aufgeben">Bestellung aufgeben</string>
+    <string name="main_title_SOLUBOX">SOLUBOX</string>
+    <string name="main_icon">Main icon</string>
+    <string name="bitte_deine_e_mail_eingeben">Bitte deine E-Mail eingeben</string>
+    <string name="next_btn">next_btn</string>
+    <string name="passwort_vergessen">Passwort vergessen?</string>
+    <string name="preis">Preis: €  %1$s </string>
+    <string name="leerzeichen"> %1$s </string>
+    <string name="euro"> € %1$s </string>
+    <string name="adresse_1">Adresse: %1$s </string>
+    <string name="oeffnungszeiten">Öffnungszeiten: %1$s </string>
+    <string name="artikel_zur_kasse">%1$s Artikel zur Kasse </string>
+    <string name="quantitaet">Quantität: %1$s </string>
+    <string name="gutschein_text">Du kannst hier dein Gutschein-Code einlösen
+    Deine Gutscheine werden automatisch mit deiner nächsten Bestellung verrechnet.</string>
+    <string name="hier_gutschein_code_eingeben">Hier Gutschein-Code eingeben</string>
+    <string name="code_einl_sen">Code einlösen</string>
+    <string name="anzahl">Anzahl: %1$s </string>
+    <string name="rabatt">Rabatt: %1$s </string>
+    <string name="gutschein_code">Gutschein-Code: %1$s </string>
+    <string name="freunde_einladen">Lade jetz deine Freunde ein und erhalte 10 x 15% für jeden, der deinen Code nach der Registrierung hinterlegt. Deine Freunde erhalten sofort nach der Registrierung 10 x 15% Gutscheine.</string>
+    <string name="freunde_einladen_amp_gutschein_sichern"><![CDATA[Freunde einladen & Gutschein sichern]]></string>
+    <string name="so_funktioniert_es_hier_klicken"><u>So funktioniert es - hier klicken</u></string>
+    <string name="code_kopieren"><u>Code Kopieren</u></string>
+    <string name="einladen">Freund einladen</string>
+    <string name="wie_kann_ich">1. Teile dein Code mit neuen Nutzer. Klicke auf "Freunde einladen" und wähle einen Weg mit dem du den Code verschicken möchtest. \n 2. Dein FreundIn öffnet den Link und lädt die App herunter und registriert sich. Bottom Menu öffnen -> Gutschein einlösen wird der Code eingelöst. Ihr erhaltet beide 10 x 15% Gutschrift.</string>
+    <string name="register_btn">Register</string>
+    <string name="uns_kontaktieren">Uns kontaktieren</string>
+    <string name="eine_nachhricht_schicken">Eine Nachhricht schicken</string>
+    <string name="eine_e_mail_senden">Eine E-Mail senden</string>
+    <string name="support_anrufen">Support anrufen</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="freunde_einladen_amp_profitieren"><![CDATA[Freunde einladen & Profitieren]]></string>
+    <string name="faq">FAQ</string>
+    <string name="kontakt">Kontakt</string>
+    <string name="einloggen">Einloggen</string>
+    <string name="stadt">Stadt</string>
+    <string name="telefonnummer_49">Telefonnummer (+49....)</string>
+    <string name="wie_kann_ich_freund_einladen_und_gutscheine_erhalten">Wie kann ich Freund einladen und Gutscheine erhalten?</string>
+    <string name="schon_registriert_zur_login_seite">Schon registriert? Zur Login Seite</string>
+    <string name="dein_code">Dein Code</string>
+    <string name="einladung">Einladung</string>
+
+
+</resources>

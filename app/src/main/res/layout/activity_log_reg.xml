@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/pet_blue">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/solu_logo_min"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/log_reg"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="342dp"
+        android:text="@string/welcome_in_your_new_delivery_app"
+        android:textAlignment="center"
+        android:fontFamily="@font/walkway_expand_semibold"
+        android:textSize="14sp"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/form_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_to_log_page"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:text="@string/login"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:textColor="@color/black"
+            android:background="@drawable/lighttodarkbutton" />
+
+
+
+        <TextView
+            android:id="@+id/btn_to_reg_page"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/register"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pet_blue"
+    tools:context=".menuItems.InviteActivity"
+    tools:ignore="MissingDefaultResource">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/go_back"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@color/pet_blue"
+            android:clickable="false"
+            android:foregroundGravity="left"
+            android:src="@drawable/ic_back"
+            android:paddingTop="16dp"
+            tools:ignore="ContentDescription,UnusedAttribute"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="252dp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/invite_title"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/walkway_expand_ultrabold"
+        android:gravity="center_horizontal"
+        android:text="@string/freunde_einladen_amp_gutschein_sichern"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/invite_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/invite_friend"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/invite_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/invite_text"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:fontFamily="@font/walkway_expand_ultrabold"
+        android:gravity="center_horizontal"
+        android:text="@string/freunde_einladen"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/funk_click"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/funk_click"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/walkway_expand_ultrabold"
+        android:gravity="center_horizontal"
+        android:text="@string/so_funktioniert_es_hier_klicken"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/invite_text"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/y_code"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/walkway_expand_semibold"
+        android:gravity="center_horizontal"
+        android:text="@string/dein_code"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/funk_click"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/code_field"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/grey"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/walkway_expand_ultrabold"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/y_code"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <TextView
+        android:id="@+id/copy_code"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/walkway_expand_ultrabold"
+        android:gravity="center_horizontal"
+        android:text="@string/code_kopieren"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code_field"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/show_btn"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/lighttodarkbutton"
+        android:fontFamily="@font/walkway_expand_ultrabold"
+        android:gravity="center"
+        android:text="@string/einladen"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copy_code" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

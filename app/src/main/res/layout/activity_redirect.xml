@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/redirectLayout"
+    android:background="@color/pet_blue"
+    tools:context=".RedirectActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/form_container"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="250dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/vorname_edt"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/formular"
+            android:fontFamily="@font/walkway_expand_semibold"
+            android:hint="@string/name"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill" />
+
+
+        <EditText
+            android:id="@+id/nachname_edt"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/formular"
+            android:fontFamily="@font/walkway_expand_semibold"
+            android:hint="@string/nachname"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/vorname_edt"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/address_edt"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/formular"
+            android:fontFamily="@font/walkway_expand_semibold"
+            android:hint="@string/adresse"
+            android:textSize="12sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vorname_edt"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/postcode_edt"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/formular"
+            android:fontFamily="@font/walkway_expand_semibold"
+            android:hint="@string/postleitzahl"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/address_edt"
+            app:layout_constraintTop_toBottomOf="@+id/nachname_edt"
+            android:inputType="textPhonetic" />
+
+        <EditText
+            android:id="@+id/city_edt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/formular"
+            android:fontFamily="@font/walkway_expand_semibold"
+            android:hint="@string/stadt"
+            android:textSize="12sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address_edt"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill" />
+
+
+        <EditText
+            android:id="@+id/phone_edt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/walkway_expand_semibold"
+            android:background="@drawable/formular"
+            android:hint="@string/telefonnummer_49"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city_edt"
+            android:inputType="textPhonetic"
+            tools:ignore="Autofill,TextFields" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/next_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_next"
+        android:src="@drawable/ic_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_container"
+        tools:ignore="ContentDescription" />
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

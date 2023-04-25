@@ -1,0 +1,212 @@
+[
+    {
+      "name":"Floral Shop",
+      "address":"Franz-Mehring-Platz 14, 10243",
+      "latlong": [
+        {
+          "lat": 23.2331,
+          "lon": 43.23
+        }
+      ],
+      "delivery_charge": 5,
+      "image":"https://previews.123rf.com/images/luplupme/luplupme1606/luplupme160600511/58500044-helles-logo-f%C3%BCr-blumenladen-hand-gezeichnet-embleme-und-florale-zeichen-f%C3%BCr-blumenladen-blumengesch%C3%A4ft-etiketten.jpg",
+      "hours": "Sunday:11:00 AM - 7:00 PM",
+      "menus": [
+        {
+          "name": "Spaghetti",
+          "price": 10.00,
+          "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/7/17/1/FN_Simple-Spaghetti-with-Tomato-Sauce_s4x3.jpg.rend.hgtvcom.826.620.suffix/1408069256188.jpeg"
+        },
+        {
+          "name": "Spaghettios Pizza",
+          "price": 13.99,
+          "url": "https://lh3.googleusercontent.com/p/AF1QipN-WboPX7pEgnNqg78wranzezsGMdPfwCoxQjdJ=s1280-p-no-v1"
+        },
+        {
+          "name": "Chocolate Pizza",
+          "price": 4.99,
+          "url": "https://149366112.v2.pressablecdn.com/wp-content/uploads/2017/08/blah.jpg"
+        },
+        {
+          "name": "Cheese Sticks",
+          "price": 5.49,
+          "url": "https://www.spendwithpennies.com/wp-content/uploads/2013/10/Cheese-Sticks-SpendWithPennies-2-21-500x500.jpg"
+        },
+        {
+          "name": "CHICKEN FINGER SANDWICH",
+          "price": 4.00,
+          "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70461/image?density=3&height=300&width=420"
+        },
+        {
+          "name": "FINGERZ BOXED LUNCH",
+          "price": 3.25,
+          "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70463/image?density=3&height=300&width=420"
+        },
+        {
+          "name": "HOUSE ZALAD ",
+          "price": 5.49,
+          "url": "https://media.timeout.com/images/105718934/image.jpg"
+        },
+        {
+          "name": "COBB ZALAD BOXED",
+          "price": 3.99,
+          "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70468/image?density=3&height=300&width=420"
+        },
+        {
+          "name": "COOKIE&BROWNIE ",
+          "price": 8.09,
+          "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70543/image?density=3&height=300&width=420"
+        },
+        {
+          "name": "BROWNIE PLATTER",
+          "price": 6.49,
+          "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70540/image?density=3&height=300&width=420"
+        }
+      ]
+    },
+    {
+      "name":"Blumen Timm",
+      "address":"Hermannstraße 123, 12051",
+      "delivery_charge": 4,
+      "image":"https://blumentimm.de/wp-content/uploads/2018/09/Logo_bt_gru%CC%88n.png",
+
+      "hours": "Sunday:11:00 AM - 7:00 PM",
+
+      "menus": [
+        {
+          "name": "Hot Dog",
+          "price": 2.99,
+          "url": "https://awrestaurants.com/sites/default/files/hotdog_0.png"
+        },
+        {
+          "name": "Cheese Dog",
+          "price": 3.59,
+          "url": "https://www.cookingpanda.com/wp-content/uploads/2020/07/7R26235-16x9-1-scaled.jpg"
+        },
+        {
+          "name": "Midway Monster",
+          "price": 5.44,
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2KzBUdwZjGoJIWIqHGHDozwcr3_oGrkhYQ&usqp=CAU"
+        },
+        {
+          "name": "Fries",
+          "price": 2.00,
+          "url": "https://images.fineartamerica.com/images-medium-large-5/crinkle-cut-french-fries-full-frame-foodcollection.jpg"
+        },
+        {
+          "name": "Milkshake",
+          "price": 3.49,
+          "url": "https://files.heftycdn.com/wp-content/uploads/2020/06/7c19980b4ec07e741b2823ea45370467.png"
+        },
+        {
+          "name": "Chocolate Shake",
+          "price": 4.95,
+          "url": "https://www.mcdonalds.com/is/image/content/dam/usa/nfl/nutrition/items/hero/desktop/t-mcdonalds-Chocolate-McCafe-Shake-Medium.jpg?$Product_Desktop$"
+        },
+        {
+          "name": "Strawberry Shake",
+          "price": 3.59,
+          "url": "https://www.mcdonalds.com/is/image/content/dam/usa/nfl/nutrition/items/hero/desktop/t-mcdonalds-Strawberry-McCafe-Shake-Medium.jpg?$Product_Desktop$"
+        },
+        {
+          "name": "Filet-O-Fish",
+          "price": 5.49,
+          "url": "https://www.mcdonalds.com/is/image/content/dam/usa/nfl/nutrition/items/hero/desktop/t-mcdonalds-Filet-O-Fish.png?$Product_Desktop$"
+        },
+        {
+          "name": "McNuggets",
+          "price": 3.99,
+          "url": "https://www.mcdonalds.com/is/image/content/dam/usa/nfl/nutrition/items/hero/desktop/t-mcdonalds-Chicken-McNuggets-4pc.jpg?$Product_Desktop$"
+        },
+        {
+          "name": "Combo Meal",
+          "price": 8.29,
+          "url": "https://www.mcdonalds.com/is/image/content/dam/usa/nfl/assets/meal/desktop/h-mcdonalds-Big-Mac-Extra-Value-Meals.jpg?$Product_Desktop$"
+        },
+        {
+          "name": "McMuffin Meal",
+          "price": 6.99,
+          "url": "https://www.mcdonalds.com/is/image/content/dam/usa/nfl/assets/meal/desktop/h-mcdonalds-Egg-McMuffin-Extra-Value-Meals.jpg?$Product_Desktop$"
+        }
+      ]
+    },
+  {
+    "name":"Green Fingers",
+    "address":"Ostbahnhof 4, 10243",
+    "delivery_charge": 5,
+    "image":"https://logos.mybrandnewlogo.com/cached/logos/MPN0rmjg8WTPxVZMJz0E/images/logo-zX3g9QP0.png",
+    "hours": "Sunday:11:00 AM - 7:00 PM",
+    "menus": [
+      {
+        "name": "Chocolate Shake",
+        "price": 4.95,
+        "url": "https://www.mcdonalds.com/is/image/content/dam/usa/nfl/nutrition/items/hero/desktop/t-mcdonalds-Chocolate-McCafe-Shake-Medium.jpg?$Product_Desktop$"
+      },
+      {
+        "name": "Strawberry Shake",
+        "price": 3.59,
+        "url": "https://www.mcdonalds.com/is/image/content/dam/usa/nfl/nutrition/items/hero/desktop/t-mcdonalds-Strawberry-McCafe-Shake-Medium.jpg?$Product_Desktop$"
+      },
+      {
+        "name": "Filet-O-Fish",
+        "price": 5.49,
+        "url": "https://www.mcdonalds.com/is/image/content/dam/usa/nfl/nutrition/items/hero/desktop/t-mcdonalds-Filet-O-Fish.png?$Product_Desktop$"
+      },
+      {
+        "name": "McNuggets",
+        "price": 3.99,
+        "url": "https://www.mcdonalds.com/is/image/content/dam/usa/nfl/nutrition/items/hero/desktop/t-mcdonalds-Chicken-McNuggets-4pc.jpg?$Product_Desktop$"
+      },
+      {
+        "name": "Combo Meal",
+        "price": 8.29,
+        "url": "https://www.mcdonalds.com/is/image/content/dam/usa/nfl/assets/meal/desktop/h-mcdonalds-Big-Mac-Extra-Value-Meals.jpg?$Product_Desktop$"
+      },
+      {
+        "name": "McMuffin Meal",
+        "price": 6.99,
+        "url": "https://www.mcdonalds.com/is/image/content/dam/usa/nfl/assets/meal/desktop/h-mcdonalds-Egg-McMuffin-Extra-Value-Meals.jpg?$Product_Desktop$"
+      }
+    ]
+  },
+  {
+    "name":"Bella Donna Florist",
+    "address":"Boddinstraße 45, 12051",
+    "delivery_charge": 6,
+    "image":"https://logos.mybrandnewlogo.com/cached/logos/RmkWzXyD6AHXLgvG6wRp/images/logo-DIRLokX0.png",
+    "hours": "Sunday:11:00 AM - 7:00 PM",
+
+    "menus": [
+      {
+        "name": "CHICKEN FINGER SANDWICH",
+        "price": 4.00,
+        "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70461/image?density=3&height=300&width=420"
+      },
+      {
+        "name": "FINGERZ BOXED LUNCH",
+        "price": 3.25,
+        "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70463/image?density=3&height=300&width=420"
+      },
+      {
+        "name": "HOUSE ZALAD BOXED",
+        "price": 5.49,
+        "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70465/image?density=3&height=300&width=420"
+      },
+      {
+        "name": "COBB ZALAD BOXED",
+        "price": 3.99,
+        "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70468/image?density=3&height=300&width=420"
+      },
+      {
+        "name": "COOKIE AND BROWNIE ",
+        "price": 8.09,
+        "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70543/image?density=3&height=300&width=420"
+      },
+      {
+        "name": "BROWNIE PLATTER",
+        "price": 6.49,
+        "url": "https://api.thelevelup.com/v15/order_ahead/menu_image_stores/70540/image?density=3&height=300&width=420"
+      }
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav1"
+            android:title="@string/profil"
+            android:icon="@drawable/ic_account_circle" />
+
+        <item
+            android:id="@+id/nav2"
+            android:title="@string/gutschein_einloesen"
+            android:icon="@drawable/ic_reduction"/>
+
+            <item
+                android:id="@+id/nav3"
+                android:title="@string/freunde_einladen_amp_profitieren"
+                android:icon="@drawable/ic_einladen"/>
+
+            <item
+                android:id="@+id/nav5"
+                android:title="@string/faq"
+                android:icon="@drawable/ic_frage"/>
+
+            <item
+                android:id="@+id/nav6"
+                android:title="@string/kontakt"
+                android:icon="@drawable/ic_kontakt"/>
+
+            <item
+                android:id="@+id/nav4"
+                android:title="@string/logout"
+                android:icon="@drawable/ic_logout"/>
+
+       </group>
+
+
+</menu>

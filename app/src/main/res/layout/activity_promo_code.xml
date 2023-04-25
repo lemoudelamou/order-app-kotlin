@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pet_blue"
+    tools:context=".menuItems.PromoCodeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@color/pet_blue"
+            android:clickable="false"
+            android:foregroundGravity="left"
+            android:src="@drawable/ic_back"
+            android:paddingTop="8dp"
+            tools:ignore="ContentDescription,UnusedAttribute"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="252dp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/gutshein_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/gutschein_einloesen"
+        android:textColor="@color/white"
+        android:fontFamily="@font/walkway_expand_ultrabold"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profil_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/gutschein_logo"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:fontFamily="@font/walkway_expand_ultrabold"
+        android:gravity="center_horizontal"
+        android:text="@string/gutschein_text"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/gutschein_edt"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/gutschein_edt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints="@string/hier_gutschein_code_eingeben"
+        android:background="@color/grey"
+        android:fontFamily="@font/walkway_expand_semibold"
+        android:gravity="center_horizontal"
+        android:hint="@string/hier_gutschein_code_eingeben"
+        android:inputType="text"
+        android:paddingTop="15dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/einloesen_btn"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/einloesen_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/lighttodarkbutton"
+        android:fontFamily="@font/walkway_expand_ultrabold"
+        android:text="@string/code_einl_sen"
+        app:layout_constraintBottom_toTopOf="@+id/gutschein_frame"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/gutschein_frame"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/shape_layout2"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gutshein_txt"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/einladung"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:hint="@string/einladung"
+            android:textColor="@color/white"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            android:textColorHint="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/anzahl_txt"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="-400dp"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:hint="@string/anzahl"
+            android:textColor="@color/white"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginTop="30dp"
+            android:textColorHint="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="-400dp" />
+
+        <TextView
+            android:id="@+id/rabatt_txt"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:hint="@string/rabatt"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gutschein_code"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="-400dp"
+            android:layout_marginLeft="-400dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:hint="@string/gutschein_code"
+            android:textColor="@color/white"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            android:textColorHint="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gutschein_anzahl_txt"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="-400dp"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:hint="@string/anzahl"
+            android:textColor="@color/white"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            android:visibility="gone"
+            android:layout_marginTop="90dp"
+            android:textColorHint="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="-400dp" />
+
+        <TextView
+            android:id="@+id/gutschein_rabatt_txt"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:hint="@string/rabatt"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginTop="90dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

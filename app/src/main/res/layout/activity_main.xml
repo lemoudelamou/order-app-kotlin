@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/pet_blue"
+        android:gravity="bottom|center_horizontal"
+        android:paddingTop="5dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:text="@string/main_title_SOLUBOX"
+            android:visibility="invisible"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints,RtlCompat" />
+
+        <TextView
+            android:id="@+id/welcome_msg"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/walkway_expand_ultrabold"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            android:layout_marginLeft="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="86dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/pet_blue"
+            android:paddingBottom="10dp"
+            android:maxWidth="20dp"
+            android:maxHeight="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/solu_logo_min"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/main_icon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/scroll"
+        app:layout_constraintTop_toBottomOf="@id/imageLayout"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/test_img"
+            android:layout_alignParentTop="true"
+            tools:ignore="ContentDescription" />
+
+
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Suche"
+            android:visibility="invisible"
+            android:iconifiedByDefault="false"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/searchview_background"
+            android:queryBackground="@android:color/transparent"
+            tools:ignore="UnusedAttribute" />
+
+        <ListView
+            android:id="@+id/userList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toTopOf="@id/coordinatorLayout"
+        app:layout_constraintTop_toBottomOf="@id/search"
+        tools:layout_editor_absoluteX="-2dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="352dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </RelativeLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar2"
+            style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/pet_blue"
+            android:theme="@style/AppTextAppearance.Button"
+            app:hideOnScroll="true"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:menu="@menu/bottom_menu"
+            app:navigationIcon="@drawable/ic_menu_black_24dp"
+            tools:ignore="UnusedAttribute" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:background="@color/pet_blue"
+            app:layout_anchor="@id/bottomAppBar2"
+            app:srcCompat="@drawable/ic_location"
+            tools:ignore="ContentDescription,VectorDrawableCompat" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
